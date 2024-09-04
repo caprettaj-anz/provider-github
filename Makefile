@@ -63,17 +63,17 @@ UPTEST_VERSION = v0.5.0
 # ====================================================================================
 # Setup Images
 
-REGISTRY_ORGS ?= xpkg.upbound.io/xunholy
+REGISTRY_ORGS ?= ghcr.io/xunholy
 IMAGES = $(PROJECT_NAME)
 -include build/makelib/imagelight.mk
 
 # ====================================================================================
 # Setup XPKG
 
-XPKG_REG_ORGS ?= xpkg.upbound.io/xunholy
+XPKG_REG_ORGS ?= ghcr.io/xunholy
 # NOTE(hasheddan): skip promoting on xpkg.upbound.io as channel tags are
 # inferred.
-XPKG_REG_ORGS_NO_PROMOTE ?= xpkg.upbound.io/xunholy
+XPKG_REG_ORGS_NO_PROMOTE ?= ghcr.io/xunholy
 XPKGS = $(PROJECT_NAME)
 -include build/makelib/xpkg.mk
 
